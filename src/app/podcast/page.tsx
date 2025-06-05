@@ -12,7 +12,7 @@ export default function Podcast() {
   return (
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold mb-8">Podcast</h1>
-      <div className="mb-8 aspect-video">
+      <div className="mb-8 h-[232px]">
         <iframe
           src="https://open.spotify.com/embed/episode/7iHf3U6uxne52Z8n2Nbn6R?utm_source=generator"
           width="100%"
