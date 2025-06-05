@@ -93,9 +93,6 @@ export default function Navbar() {
           <Link href="/" className="hover:underline">
             Home
           </Link>
-          <Link href="/about" className="hover:underline">
-            About
-          </Link>
           <Link href="/blog" className="hover:underline">
             Blog
           </Link>
@@ -143,9 +140,6 @@ export default function Navbar() {
           <div className="flex flex-col space-y-2 p-4">
             <Link href="/" className="hover:underline" onClick={closeMenu}>
               Home
-            </Link>
-            <Link href="/about" className="hover:underline" onClick={closeMenu}>
-              About
             </Link>
             <Link href="/blog" className="hover:underline" onClick={closeMenu}>
               Blog

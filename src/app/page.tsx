@@ -34,9 +34,9 @@ export default function Home() {
         <section id="about" className="py-12 md:py-16 container mx-auto px-4">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-gray-700 dark:text-gray-300">
-            I'm a driven software developer with experience in .NET, HTML/CSS, JavaScript, TypeScript and Python. 
+            I&apos;m a driven software developer with experience in .NET, HTML/CSS, JavaScript, TypeScript and Python.
             I love creating intuitive, engaging web experiences and am interested in blending technology with thoughtful design.
-            When I'm not coding, I record a great podcast named Açık Büfe Diyalog.
+            When I&apos;m not coding, I record a great podcast named Açık Büfe Diyalog.
           </p>
         </section>
 
