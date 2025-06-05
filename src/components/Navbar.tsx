@@ -1,16 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const element = document.documentElement;
-    setIsDark(element.classList.contains("dark"));
-  }, []);
+  const { resolvedTheme, setTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -21,16 +18,7 @@ export default function Navbar() {
   };
 
   const toggleTheme = () => {
-    const element = document.documentElement;
-    const newTheme = !isDark;
-    if (newTheme) {
-      element.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      element.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-    setIsDark(newTheme);
+    setTheme(isDark ? "light" : "dark");
   };
 
   return (
