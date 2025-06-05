@@ -70,7 +70,7 @@ export default function Home() {
         {/* Podcast Section */}
         <section id="podcast" className="py-12 md:py-16 container mx-auto px-4">
           <h2 className="text-2xl font-semibold mb-4">Podcast</h2>
-          <div className="aspect-video">
+          <div className="h-[232px]">
             <iframe
               src="https://open.spotify.com/embed/show/5IkatgeB5ZBbbAADZC9Tty?utm_source=generator"
               width="100%"
