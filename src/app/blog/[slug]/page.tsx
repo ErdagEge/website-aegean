@@ -4,11 +4,8 @@ import ReactMarkdown from "react-markdown";
 import type { Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
 
-export function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Metadata {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function generateMetadata({ params }: any): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) return {};
   return createMetadata({
@@ -24,6 +21,7 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function BlogPost({ params }: any) {
   const post = blogPosts.find((p) => p.slug === params.slug);
