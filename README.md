@@ -43,6 +43,8 @@ npm run dev
 
 Visit http://localhost:3000 in your browser.
 
+---
+
 ## 🚀 Deployment
 This project is designed to be deployed on [Vercel](https://vercel.com):
 
@@ -51,6 +53,8 @@ Push your project to GitHub.
 Connect your repo to Vercel.
 
 Vercel will handle build & deployment automatically.
+
+---
 
 ## 📄 License
 MIT License
