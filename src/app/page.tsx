@@ -19,8 +19,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
       {/* Hero Section */}
       <header className="bg-gray-100 dark:bg-gray-900 py-12 md:py-20 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">John Doe</h1>
-        <p className="text-lg md:text-2xl mb-6">Building things for the web</p>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">Ege Erdağ</h1>
+        <p className="text-lg md:text-2xl mb-6">Designing and building things for the web</p>
         <a
           href="#projects"
           className="inline-block bg-blue-600 text-white px-4 md:px-6 py-2 md:py-3 rounded hover:bg-blue-700"
@@ -34,9 +34,9 @@ export default function Home() {
         <section id="about" className="py-12 md:py-16 container mx-auto px-4">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-gray-700 dark:text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            euismod, nunc vel convallis suscipit, lacus justo sodales risus,
-            vitae fermentum lectus dui at sapien.
+            I'm a driven software developer with experience in .NET, HTML/CSS, JavaScript, TypeScript and Python. 
+            I love creating intuitive, engaging web experiences and am interested in blending technology with thoughtful design.
+            When I'm not coding, I record a great podcast named Açık Büfe Diyalog.
           </p>
         </section>
 
@@ -46,21 +46,21 @@ export default function Home() {
             <h2 className="text-2xl font-semibold mb-8 text-center">Projects</h2>
             <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
               <div className="border rounded p-6 bg-white dark:bg-gray-700">
-                <h3 className="font-semibold mb-2">Project One</h3>
+                <h3 className="font-semibold mb-2">Website Aegean</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Short description about the project.
+                  This very site! Look around.
                 </p>
               </div>
               <div className="border rounded p-6 bg-white dark:bg-gray-700">
-                <h3 className="font-semibold mb-2">Project Two</h3>
+                <h3 className="font-semibold mb-2">Podcast Archive</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Short description about the project.
+                  A creative podcast archive platform to organize and share content.
                 </p>
               </div>
               <div className="border rounded p-6 bg-white dark:bg-gray-700">
-                <h3 className="font-semibold mb-2">Project Three</h3>
+                <h3 className="font-semibold mb-2">Basketball Tournament Tracker</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Short description about the project.
+                  A web app that can help organizers for their tournament planning. Built with .NET MVC.
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-4">Podcast</h2>
           <div className="aspect-video">
             <iframe
-              src="https://open.spotify.com/embed/episode/7iHf3U6uxne52Z8n2Nbn6R?utm_source=generator"
+              src="https://open.spotify.com/embed/show/5IkatgeB5ZBbbAADZC9Tty?utm_source=generator"
               width="100%"
               height="100%"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"

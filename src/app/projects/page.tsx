@@ -15,19 +15,19 @@ export const metadata: Metadata = createMetadata({
 
 const projects: Project[] = [
   {
-    title: "Project One",
-    description: "Short description about the project.",
-    link: "https://example.com/project-one",
+    title: "Website Aegean",
+    description: "THIS is website aegean.",
+    link: "https://github.com/ErdagEge/website-aegean",
   },
   {
-    title: "Project Two",
-    description: "Short description about the project.",
-    link: "https://example.com/project-two",
+    title: "Podcast Archive",
+    description: "A creative podcast archive platform to organize and share content.",
+    link: "https://erdagege.github.io/podcast-archive/",
   },
   {
-    title: "Project Three",
-    description: "Short description about the project.",
-    link: "https://example.com/project-three",
+    title: "Basketball Tournament Tracker",
+    description: "A web app that can help organizers for their tournament planning. Built with .NET MVC.",
+    link: "https://github.com/ErdagEge/basketball-tournament-tracker",
   },
 ];
 

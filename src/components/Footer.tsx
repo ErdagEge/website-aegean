@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 text-center flex flex-col items-center space-y-4">
         <div className="flex space-x-6">
           <a
-            href="https://github.com/username"
+            href="https://github.com/ErdagEge"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -32,7 +32,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/username"
+            href="https://www.linkedin.com/in/egeerdag"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -50,7 +50,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="mailto:email@example.com"
+            href="mailto:egeerdag@gmail.com"
             aria-label="Email"
             className="hover:text-gray-600 dark:hover:text-gray-300"
           >

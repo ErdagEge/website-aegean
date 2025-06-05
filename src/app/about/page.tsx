@@ -18,7 +18,7 @@ export default function About() {
           className="w-32 h-32 rounded-full object-cover"
         />
         <p className="text-gray-700 dark:text-gray-300 max-w-prose">
-          I&apos;m Jane Doe, a web developer who enjoys building clean and minimal
+          I'm Ege, a web developer who enjoys building clean and minimal
           interfaces. This is a short bio section where you can share more about
           yourself and your interests.
         </p>
