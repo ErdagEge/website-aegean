@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "About | Ege's Personal Site",
+  description: "Learn more about Ege and his work.",
+  path: "about",
+});
+
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-12">

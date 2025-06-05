@@ -4,6 +4,15 @@ type Project = {
   link: string;
 };
 
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "Projects | Ege's Personal Site",
+  description: "A selection of projects built by Ege.",
+  path: "projects",
+});
+
 const projects: Project[] = [
   {
     title: "Project One",

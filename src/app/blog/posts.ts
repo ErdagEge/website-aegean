@@ -3,6 +3,7 @@ export type BlogPost = {
   slug: string;
   title: string;
   excerpt: string;
+  date: string;
   content: string;
 };
 
@@ -12,6 +13,7 @@ export const blogPosts: BlogPost[] = [
     slug: "introducing-my-blog",
     title: "Introducing My Blog",
     excerpt: "Welcome to my blog where I share ideas and projects.",
+    date: "2024-01-01",
     content: `# Introducing My Blog
 
 Welcome to **my blog**. This is a short post written in Markdown.
@@ -28,6 +30,7 @@ Welcome to **my blog**. This is a short post written in Markdown.
     slug: "another-post",
     title: "Another Post",
     excerpt: "More thoughts written in markdown format.",
+    date: "2024-02-01",
     content: `# Another Post
 
 Here is some more _markdown_ content for a second post.
@@ -43,6 +46,7 @@ Here is some more _markdown_ content for a second post.
     slug: "yet-another-post",
     title: "Yet Another Post",
     excerpt: "Showing code blocks and more.",
+    date: "2024-03-01",
     content: `# Yet Another Post
 
 This post shows more sample content.

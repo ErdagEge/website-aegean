@@ -1,4 +1,12 @@
 import { episodes } from "./episodes";
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "Podcast | Ege's Personal Site",
+  description: "Conversations and audio content from Ege.",
+  path: "podcast",
+});
 
 export default function Podcast() {
   return (

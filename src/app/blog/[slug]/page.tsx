@@ -1,6 +1,24 @@
 import { notFound } from "next/navigation";
 import { blogPosts } from "../posts";
 import ReactMarkdown from "react-markdown";
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const post = blogPosts.find((p) => p.slug === params.slug);
+  if (!post) return {};
+  return createMetadata({
+    title: `${post.title} | Ege's Personal Site`,
+    description: post.excerpt,
+    path: `blog/${post.slug}`,
+    type: "article",
+    date: post.date,
+  });
+}
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));

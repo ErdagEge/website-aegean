@@ -1,4 +1,13 @@
 
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "Ege's Personal Site | Developer, Engineer, Podcaster",
+  description:
+    "Personal site of Ege showcasing projects, blog posts, and podcast.",
+});
+
 const blogPosts = [
   { id: 1, title: "Introducing My Blog", excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
   { id: 2, title: "Another Post", excerpt: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
