@@ -94,36 +94,6 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="py-8 bg-gray-900 text-white text-center">
-        <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 mb-4">
-          <a href="#" aria-label="Twitter" className="hover:text-blue-400">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="w-6 h-6"
-            >
-              <path d="M8 19c11 0 16-9 16-16v-.7A11.3 11.3 0 0 0 26 0a11 11 0 0 1-3.1 1A5.4 5.4 0 0 0 25 0a11 11 0 0 1-3.4 1.3A5.5 5.5 0 0 0 12 6.5a15.7 15.7 0 0 1-11-6 5.5 5.5 0 0 0 1.7 7.4A5.3 5.3 0 0 1 1 7v.1a5.5 5.5 0 0 0 4.4 5.4 5.2 5.2 0 0 1-1.4.2 4.6 4.6 0 0 1-1-.1 5.5 5.5 0 0 0 5.1 3.8A11 11 0 0 1 0 18.6a15.7 15.7 0 0 0 8 2.4" />
-            </svg>
-          </a>
-          <a href="#" aria-label="GitHub" className="hover:text-gray-400">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="w-6 h-6"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-3 .7-3.7-1.5-3.7-1.5a2.9 2.9 0 0 0-1.2-1.5c-1-.8.1-.8.1-.8a2.3 2.3 0 0 1 1.7 1.2 2.3 2.3 0 0 0 3 1 2.3 2.3 0 0 1 .7-1.4c-2.4-.3-5-1.2-5-5.3a4.1 4.1 0 0 1 1.1-2.8 3.9 3.9 0 0 1 .1-2.8s.9-.3 2.8 1a9.7 9.7 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1a3.9 3.9 0 0 1 .1 2.8 4 4 0 0 1 1.1 2.8c0 4.1-2.6 5-5 5.3a2.6 2.6 0 0 1 .8 2v3c0 .3.2.6.7.5A10 10 0 0 0 12 2"
-                clipRule="evenodd"
-              />
-            </svg>
-          </a>
-        </div>
-        <p>Contact: email@example.com</p>
-      </footer>
     </div>
   );
 }
