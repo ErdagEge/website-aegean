@@ -21,7 +21,10 @@ export default function Podcast() {
         ></iframe>
       </div>
       <div className="space-y-6">
-        {episodes.map((episode) => (
+        {episodes
+          .slice()
+          .sort((a, b) => b.id - a.id)
+          .map((episode) => (
           <div key={episode.id} className="border-b pb-4">
             <h2 className="text-xl font-semibold mb-1">{episode.title}</h2>
             <p className="text-gray-600 dark:text-gray-300">{episode.description}</p>
