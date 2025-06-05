@@ -1,5 +1,13 @@
 import Link from "next/link";
 import { blogPosts } from "./posts";
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createMetadata({
+  title: "Blog | Ege's Personal Site",
+  description: "Articles and tutorials written by Ege.",
+  path: "blog",
+});
 
 export default function Blog() {
   return (
