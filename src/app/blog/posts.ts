@@ -11,24 +11,47 @@ export const blogPosts: BlogPost[] = [
     id: 1,
     slug: "introducing-my-blog",
     title: "Introducing My Blog",
-    excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet varius cursus, nunc nisi luctus nisi, euismod aliquam nisl nunc eu massa.",
+    excerpt: "Welcome to my blog where I share ideas and projects.",
+    content: `# Introducing My Blog
+
+Welcome to **my blog**. This is a short post written in Markdown.
+
+## Why a blog?
+
+- Share ideas
+- Document projects
+- Learn in public
+`,
   },
   {
     id: 2,
     slug: "another-post",
     title: "Another Post",
-    excerpt: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    content:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    excerpt: "More thoughts written in markdown format.",
+    content: `# Another Post
+
+Here is some more _markdown_ content for a second post.
+
+## Features
+
+1. Dynamic routes
+2. Markdown support
+`,
   },
   {
     id: 3,
     slug: "yet-another-post",
     title: "Yet Another Post",
-    excerpt: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    content:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    excerpt: "Showing code blocks and more.",
+    content: `# Yet Another Post
+
+This post shows more sample content.
+
+### Code Example
+
+\`\`\`ts
+console.log('Hello, world!');
+\`\`\`
+`,
   },
 ];
