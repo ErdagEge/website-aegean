@@ -14,7 +14,7 @@ export default function Podcast() {
       <h1 className="text-3xl font-bold mb-8">Podcast</h1>
       <div className="mb-8 aspect-video">
         <iframe
-          src="https://open.spotify.com/embed/episode/7iHf3U6uxne52Z8n2Nbn6R?utm_source=generator"
+          src="https://open.spotify.com/embed/show/5IkatgeB5ZBbbAADZC9Tty?utm_source=generator"
           width="100%"
           height="100%"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
