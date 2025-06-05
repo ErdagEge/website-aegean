@@ -29,7 +29,7 @@ This website serves as my personal hub to showcase:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/ErdagEge/website-aegean
 cd your-repo-name
 ```
 
