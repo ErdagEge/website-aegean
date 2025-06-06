@@ -10,8 +10,8 @@ export const metadata: Metadata = createMetadata({
 
 export default function Podcast() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8">Podcast</h1>
+    <div className="container mx-auto px-4 py-16 md:py-24 font-[family-name:var(--font-body)]">
+      <h1 className="text-4xl font-extrabold mb-10">Podcast</h1>
       <div className="mb-8 h-[232px]">
         <iframe
           src="https://open.spotify.com/embed/show/5IkatgeB5ZBbbAADZC9Tty?utm_source=generator"
@@ -25,8 +25,8 @@ export default function Podcast() {
           .slice()
           .sort((a, b) => b.id - a.id)
           .map((episode) => (
-          <div key={episode.id} className="border-b pb-4">
-            <h2 className="text-xl font-semibold mb-1">{episode.title}</h2>
+          <div key={episode.id} className="border-b pb-6">
+            <h2 className="text-2xl font-semibold mb-1">{episode.title}</h2>
             <p className="text-gray-600 dark:text-gray-300">{episode.description}</p>
           </div>
         ))}

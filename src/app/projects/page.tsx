@@ -33,8 +33,8 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8">Projects</h1>
+    <div className="container mx-auto px-4 py-16 md:py-24 font-[family-name:var(--font-body)]">
+      <h1 className="text-4xl font-extrabold mb-10">Projects</h1>
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         {projects.map((project) => (
           <a
@@ -44,7 +44,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="block border rounded p-6 bg-white dark:bg-gray-800 transition hover:shadow-lg hover:-translate-y-1"
           >
-            <h2 className="font-semibold text-xl mb-2">{project.title}</h2>
+            <h2 className="font-semibold text-2xl mb-2">{project.title}</h2>
             <p className="text-gray-600 dark:text-gray-300">
               {project.description}
             </p>

@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-100 dark:bg-gray-900 border-b">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="text-xl font-semibold">
+        <Link href="/" className="text-2xl font-bold font-[family-name:var(--font-heading)]">
           MySite
         </Link>
         <button

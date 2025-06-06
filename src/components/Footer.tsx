@@ -8,8 +8,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 border-t py-6 mt-12">
-      <div className="container mx-auto px-4 text-center flex flex-col items-center space-y-4">
+    <footer className="bg-gray-100 dark:bg-gray-900 border-t py-8 mt-16">
+      <div className="container mx-auto px-4 text-center flex flex-col items-center space-y-6 font-[family-name:var(--font-body)]">
         <div className="flex space-x-6">
           <a
             href="https://github.com/ErdagEge"
