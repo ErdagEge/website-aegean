@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent-from: #6366f1;
+  --accent-to: #0ea5e9;
 }
 
 @theme inline {
@@ -16,12 +18,16 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --accent-from: #6366f1;
+    --accent-to: #0ea5e9;
   }
 }
 
 html.dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --accent-from: #6366f1;
+  --accent-to: #0ea5e9;
 }
 
 h1,
@@ -38,4 +44,26 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), Arial, Helvetica, sans-serif;
   line-height: 1.6;
+}
+
+.btn-gradient {
+  @apply text-white rounded transition-transform duration-300 inline-block;
+  background-image: linear-gradient(
+    to right,
+    var(--accent-from),
+    var(--accent-to)
+  );
+}
+
+.btn-gradient:hover {
+  @apply scale-105;
+  background-image: linear-gradient(
+    to right,
+    var(--accent-to),
+    var(--accent-from)
+  );
+}
+
+.link-accent {
+  @apply text-indigo-600 dark:text-teal-400 hover:underline transition-colors duration-300;
 }
