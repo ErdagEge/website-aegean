@@ -44,9 +44,7 @@ export default function Footer() {
               fill="currentColor"
               className="w-6 h-6"
             >
-              <path
-                d="M4.98 3.5A2.5 2.5 0 002.5 6v12a2.5 2.5 0 002.48 2.5h14.04A2.5 2.5 0 0021.5 18V6a2.5 2.5 0 00-2.48-2.5H4.98zM8 18H5.5V9H8v9zm-1.25-10.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zM18.5 18h-2.5v-4.5c0-1.24-.51-2-1.56-2-.85 0-1.28.57-1.49 1.12-.08.2-.1.47-.1.74V18h-2.5V9H13v1.24c.36-.55 1.01-1.34 2.46-1.34 1.79 0 3.04 1.17 3.04 3.69V18z"
-              />
+              <path d="M4.98 3.5A2.5 2.5 0 002.5 6v12a2.5 2.5 0 002.48 2.5h14.04A2.5 2.5 0 0021.5 18V6a2.5 2.5 0 00-2.48-2.5H4.98zM8 18H5.5V9H8v9zm-1.25-10.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zM18.5 18h-2.5v-4.5c0-1.24-.51-2-1.56-2-.85 0-1.28.57-1.49 1.12-.08.2-.1.47-.1.74V18h-2.5V9H13v1.24c.36-.55 1.01-1.34 2.46-1.34 1.79 0 3.04 1.17 3.04 3.69V18z" />
             </svg>
           </a>
           <a
@@ -64,10 +62,7 @@ export default function Footer() {
             </svg>
           </a>
         </div>
-        <button
-          onClick={scrollToTop}
-          className="text-sm underline hover:text-blue-600"
-        >
+        <button onClick={scrollToTop} className="text-sm underline link-accent">
           Back to top
         </button>
       </div>

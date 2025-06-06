@@ -24,11 +24,14 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-100 dark:bg-gray-900 border-b">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="text-2xl font-bold font-[family-name:var(--font-heading)]">
+        <Link
+          href="/"
+          className="text-2xl font-bold font-[family-name:var(--font-heading)]"
+        >
           MySite
         </Link>
         <button
-          className="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800"
+          className="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -49,7 +52,7 @@ export default function Navbar() {
         <button
           onClick={toggleTheme}
           aria-label="Toggle dark mode"
-          className="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800"
+          className="md:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
         >
           {isDark ? (
             <svg
@@ -58,9 +61,7 @@ export default function Navbar() {
               fill="currentColor"
               className="w-5 h-5"
             >
-              <path
-                d="M12 3.1a1 1 0 01.993.883L13 4v2a1 1 0 01-1.993.117L11 6V4a1 1 0 011-1zM5.636 5.636a1 1 0 01.117 1.41l-1.414 1.414A1 1 0 012.93 6.93l1.414-1.414a1 1 0 011.292-.117zM12 16a4 4 0 100-8 4 4 0 000 8zm6.364-9.95a1 1 0 011.41 1.41l-1.414 1.415a1 1 0 01-1.528-1.282l.118-.128 1.414-1.415zM19 11a1 1 0 01.117 1.993L19 13h-2a1 1 0 01-.117-1.993L17 11h2zM6 11a1 1 0 01.117 1.993L6 13H4a1 1 0 01-.117-1.993L4 11h2zm11.657 6.657a1 1 0 011.41 0l1.414 1.414a1 1 0 01-1.41 1.415l-1.415-1.415a1 1 0 010-1.414zM4.222 17.071a1 1 0 011.415 1.414L4.222 19.9a1 1 0 01-1.415-1.414l1.415-1.415zM13 18v2a1 1 0 01-1.993.117L11 20v-2a1 1 0 011.993-.117L13 18z"
-              />
+              <path d="M12 3.1a1 1 0 01.993.883L13 4v2a1 1 0 01-1.993.117L11 6V4a1 1 0 011-1zM5.636 5.636a1 1 0 01.117 1.41l-1.414 1.414A1 1 0 012.93 6.93l1.414-1.414a1 1 0 011.292-.117zM12 16a4 4 0 100-8 4 4 0 000 8zm6.364-9.95a1 1 0 011.41 1.41l-1.414 1.415a1 1 0 01-1.528-1.282l.118-.128 1.414-1.415zM19 11a1 1 0 01.117 1.993L19 13h-2a1 1 0 01-.117-1.993L17 11h2zM6 11a1 1 0 01.117 1.993L6 13H4a1 1 0 01-.117-1.993L4 11h2zm11.657 6.657a1 1 0 011.41 0l1.414 1.414a1 1 0 01-1.41 1.415l-1.415-1.415a1 1 0 010-1.414zM4.222 17.071a1 1 0 011.415 1.414L4.222 19.9a1 1 0 01-1.415-1.414l1.415-1.415zM13 18v2a1 1 0 01-1.993.117L11 20v-2a1 1 0 011.993-.117L13 18z" />
             </svg>
           ) : (
             <svg
@@ -78,22 +79,22 @@ export default function Navbar() {
           )}
         </button>
         <div className="hidden md:flex space-x-6 items-center">
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="hover:underline transition-colors">
             Home
           </Link>
-          <Link href="/blog" className="hover:underline">
+          <Link href="/blog" className="hover:underline transition-colors">
             Blog
           </Link>
-          <Link href="/projects" className="hover:underline">
+          <Link href="/projects" className="hover:underline transition-colors">
             Projects
           </Link>
-          <Link href="/podcast" className="hover:underline">
+          <Link href="/podcast" className="hover:underline transition-colors">
             Podcast
           </Link>
           <button
             onClick={toggleTheme}
             aria-label="Toggle dark mode"
-            className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800"
+            className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
           >
             {isDark ? (
               <svg
@@ -102,9 +103,7 @@ export default function Navbar() {
                 fill="currentColor"
                 className="w-5 h-5"
               >
-                <path
-                  d="M12 3.1a1 1 0 01.993.883L13 4v2a1 1 0 01-1.993.117L11 6V4a1 1 0 011-1zM5.636 5.636a1 1 0 01.117 1.41l-1.414 1.414A1 1 0 012.93 6.93l1.414-1.414a1 1 0 011.292-.117zM12 16a4 4 0 100-8 4 4 0 000 8zm6.364-9.95a1 1 0 011.41 1.41l-1.414 1.415a1 1 0 01-1.528-1.282l.118-.128 1.414-1.415zM19 11a1 1 0 01.117 1.993L19 13h-2a1 1 0 01-.117-1.993L17 11h2zM6 11a1 1 0 01.117 1.993L6 13H4a1 1 0 01-.117-1.993L4 11h2zm11.657 6.657a1 1 0 011.41 0l1.414 1.414a1 1 0 01-1.41 1.415l-1.415-1.415a1 1 0 010-1.414zM4.222 17.071a1 1 0 011.415 1.414L4.222 19.9a1 1 0 01-1.415-1.414l1.415-1.415zM13 18v2a1 1 0 01-1.993.117L11 20v-2a1 1 0 011.993-.117L13 18z"
-                />
+                <path d="M12 3.1a1 1 0 01.993.883L13 4v2a1 1 0 01-1.993.117L11 6V4a1 1 0 011-1zM5.636 5.636a1 1 0 01.117 1.41l-1.414 1.414A1 1 0 012.93 6.93l1.414-1.414a1 1 0 011.292-.117zM12 16a4 4 0 100-8 4 4 0 000 8zm6.364-9.95a1 1 0 011.41 1.41l-1.414 1.415a1 1 0 01-1.528-1.282l.118-.128 1.414-1.415zM19 11a1 1 0 01.117 1.993L19 13h-2a1 1 0 01-.117-1.993L17 11h2zM6 11a1 1 0 01.117 1.993L6 13H4a1 1 0 01-.117-1.993L4 11h2zm11.657 6.657a1 1 0 011.41 0l1.414 1.414a1 1 0 01-1.41 1.415l-1.415-1.415a1 1 0 010-1.414zM4.222 17.071a1 1 0 011.415 1.414L4.222 19.9a1 1 0 01-1.415-1.414l1.415-1.415zM13 18v2a1 1 0 01-1.993.117L11 20v-2a1 1 0 011.993-.117L13 18z" />
               </svg>
             ) : (
               <svg
@@ -126,22 +125,38 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-gray-100 dark:bg-gray-900 border-t">
           <div className="flex flex-col space-y-2 p-4">
-            <Link href="/" className="hover:underline" onClick={closeMenu}>
+            <Link
+              href="/"
+              className="hover:underline transition-colors"
+              onClick={closeMenu}
+            >
               Home
             </Link>
-            <Link href="/blog" className="hover:underline" onClick={closeMenu}>
+            <Link
+              href="/blog"
+              className="hover:underline transition-colors"
+              onClick={closeMenu}
+            >
               Blog
             </Link>
-            <Link href="/projects" className="hover:underline" onClick={closeMenu}>
+            <Link
+              href="/projects"
+              className="hover:underline transition-colors"
+              onClick={closeMenu}
+            >
               Projects
             </Link>
-            <Link href="/podcast" className="hover:underline" onClick={closeMenu}>
+            <Link
+              href="/podcast"
+              className="hover:underline transition-colors"
+              onClick={closeMenu}
+            >
               Podcast
             </Link>
             <button
               onClick={toggleTheme}
               aria-label="Toggle dark mode"
-              className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 self-start"
+              className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 self-start transition-colors"
             >
               {isDark ? (
                 <svg
@@ -150,9 +165,7 @@ export default function Navbar() {
                   fill="currentColor"
                   className="w-5 h-5"
                 >
-                  <path
-                    d="M12 3.1a1 1 0 01.993.883L13 4v2a1 1 0 01-1.993.117L11 6V4a1 1 0 011-1zM5.636 5.636a1 1 0 01.117 1.41l-1.414 1.414A1 1 0 012.93 6.93l1.414-1.414a1 1 0 011.292-.117zM12 16a4 4 0 100-8 4 4 0 000 8zm6.364-9.95a1 1 0 011.41 1.41l-1.414 1.415a1 1 0 01-1.528-1.282l.118-.128 1.414-1.415zM19 11a1 1 0 01.117 1.993L19 13h-2a1 1 0 01-.117-1.993L17 11h2zM6 11a1 1 0 01.117 1.993L6 13H4a1 1 0 01-.117-1.993L4 11h2zm11.657 6.657a1 1 0 011.41 0l1.414 1.414a1 1 0 01-1.41 1.415l-1.415-1.415a1 1 0 010-1.414zM4.222 17.071a1 1 0 011.415 1.414L4.222 19.9a1 1 0 01-1.415-1.414l1.415-1.415zM13 18v2a1 1 0 01-1.993.117L11 20v-2a1 1 0 011.993-.117L13 18z"
-                  />
+                  <path d="M12 3.1a1 1 0 01.993.883L13 4v2a1 1 0 01-1.993.117L11 6V4a1 1 0 011-1zM5.636 5.636a1 1 0 01.117 1.41l-1.414 1.414A1 1 0 012.93 6.93l1.414-1.414a1 1 0 011.292-.117zM12 16a4 4 0 100-8 4 4 0 000 8zm6.364-9.95a1 1 0 011.41 1.41l-1.414 1.415a1 1 0 01-1.528-1.282l.118-.128 1.414-1.415zM19 11a1 1 0 01.117 1.993L19 13h-2a1 1 0 01-.117-1.993L17 11h2zM6 11a1 1 0 01.117 1.993L6 13H4a1 1 0 01-.117-1.993L4 11h2zm11.657 6.657a1 1 0 011.41 0l1.414 1.414a1 1 0 01-1.41 1.415l-1.415-1.415a1 1 0 010-1.414zM4.222 17.071a1 1 0 011.415 1.414L4.222 19.9a1 1 0 01-1.415-1.414l1.415-1.415zM13 18v2a1 1 0 01-1.993.117L11 20v-2a1 1 0 011.993-.117L13 18z" />
                 </svg>
               ) : (
                 <svg

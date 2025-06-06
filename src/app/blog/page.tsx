@@ -17,12 +17,12 @@ export default function Blog() {
         {blogPosts.map((post) => (
           <article key={post.id} className="border-b pb-6">
             <h2 className="text-2xl font-semibold mb-2">
-              <Link href={`/blog/${post.slug}`} className="hover:underline text-blue-600">
+              <Link href={`/blog/${post.slug}`} className="link-accent">
                 {post.title}
               </Link>
             </h2>
             <p className="text-gray-600 mb-2">{post.excerpt}</p>
-            <Link href={`/blog/${post.slug}`} className="text-blue-600 hover:underline">
+            <Link href={`/blog/${post.slug}`} className="link-accent">
               Read more
             </Link>
           </article>
