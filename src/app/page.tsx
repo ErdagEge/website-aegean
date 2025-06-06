@@ -16,14 +16,14 @@ const blogPosts = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col min-h-screen font-[family-name:var(--font-body)]">
       {/* Hero Section */}
-      <header className="bg-gray-100 dark:bg-gray-900 py-12 md:py-20 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">Ege Erdağ</h1>
-        <p className="text-lg md:text-2xl mb-6">Designing and building things for the web</p>
+      <header className="bg-gray-100 dark:bg-gray-900 py-16 md:py-24 text-center">
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-6">Ege Erdağ</h1>
+        <p className="text-xl md:text-2xl mb-8">Designing and building things for the web</p>
         <a
           href="#projects"
-          className="inline-block bg-blue-600 text-white px-4 md:px-6 py-2 md:py-3 rounded hover:bg-blue-700"
+          className="inline-block bg-blue-600 text-white px-6 md:px-8 py-3 md:py-4 rounded hover:bg-blue-700"
         >
           View My Work
         </a>
@@ -31,9 +31,9 @@ export default function Home() {
 
       <main className="flex-1">
         {/* About Section */}
-        <section id="about" className="py-12 md:py-16 container mx-auto px-4">
-          <h2 className="text-2xl font-semibold mb-4">About Me</h2>
-          <p className="text-gray-700 dark:text-gray-300">
+        <section id="about" className="py-16 md:py-24 container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-6">About Me</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-6">
             I&apos;m a driven software developer with experience in .NET, HTML/CSS, JavaScript, TypeScript and Python.
             I love creating intuitive, engaging web experiences and am interested in blending technology with thoughtful design.
             When I&apos;m not coding, I record a great podcast named Açık Büfe Diyalog.
@@ -41,9 +41,9 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-12 md:py-16 bg-gray-50 dark:bg-gray-800">
+        <section id="projects" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-semibold mb-8 text-center">Projects</h2>
+            <h2 className="text-3xl font-semibold mb-10 text-center">Projects</h2>
             <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
               <div className="border rounded p-6 bg-white dark:bg-gray-700">
                 <h3 className="font-semibold mb-2">Website Aegean</h3>
@@ -68,8 +68,8 @@ export default function Home() {
         </section>
 
         {/* Podcast Section */}
-        <section id="podcast" className="py-12 md:py-16 container mx-auto px-4">
-          <h2 className="text-2xl font-semibold mb-4">Podcast</h2>
+        <section id="podcast" className="py-16 md:py-24 container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-6">Podcast</h2>
           <div className="h-[232px]">
             <iframe
               src="https://open.spotify.com/embed/show/5IkatgeB5ZBbbAADZC9Tty?utm_source=generator"
@@ -81,9 +81,9 @@ export default function Home() {
         </section>
 
         {/* Blog Preview Section */}
-        <section id="blog" className="py-12 md:py-16 bg-gray-50 dark:bg-gray-800">
+        <section id="blog" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-semibold mb-8 text-center">
+            <h2 className="text-3xl font-semibold mb-10 text-center">
               Latest Blog Posts
             </h2>
             <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">

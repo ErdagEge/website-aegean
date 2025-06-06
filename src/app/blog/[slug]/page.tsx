@@ -22,7 +22,6 @@ export function generateStaticParams() {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function BlogPost({ params }: any) {
   const post = blogPosts.find((p) => p.slug === params.slug);
 
@@ -31,14 +30,14 @@ export default function BlogPost({ params }: any) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-4">{post!.title}</h1>
+    <div className="container mx-auto px-4 py-16 md:py-24 font-[family-name:var(--font-body)]">
+      <h1 className="text-4xl font-extrabold mb-6">{post!.title}</h1>
       <ReactMarkdown
         className="text-gray-700"
         components={{
-          h1: (props) => <h1 className="text-3xl font-bold mb-4" {...props} />,
-          h2: (props) => <h2 className="text-2xl font-semibold mb-3" {...props} />,
-          h3: (props) => <h3 className="text-xl font-semibold mb-2" {...props} />,
+          h1: (props) => <h1 className="text-4xl font-extrabold mb-4" {...props} />,
+          h2: (props) => <h2 className="text-3xl font-semibold mb-3" {...props} />,
+          h3: (props) => <h3 className="text-2xl font-semibold mb-2" {...props} />,
           p: (props) => <p className="mb-4 leading-relaxed" {...props} />,
           ul: (props) => <ul className="list-disc pl-6 mb-4" {...props} />,
           ol: (props) => <ol className="list-decimal pl-6 mb-4" {...props} />,

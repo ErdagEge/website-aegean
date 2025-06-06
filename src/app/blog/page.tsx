@@ -11,12 +11,12 @@ export const metadata: Metadata = createMetadata({
 
 export default function Blog() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8">Blog</h1>
+    <div className="container mx-auto px-4 py-16 md:py-24 font-[family-name:var(--font-body)]">
+      <h1 className="text-4xl font-extrabold mb-10">Blog</h1>
       <div className="space-y-8">
         {blogPosts.map((post) => (
-          <article key={post.id} className="border-b pb-4">
-            <h2 className="text-xl font-semibold mb-2">
+          <article key={post.id} className="border-b pb-6">
+            <h2 className="text-2xl font-semibold mb-2">
               <Link href={`/blog/${post.slug}`} className="hover:underline text-blue-600">
                 {post.title}
               </Link>
